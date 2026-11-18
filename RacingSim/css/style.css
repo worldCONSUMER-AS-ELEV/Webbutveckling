@@ -1,0 +1,12 @@
+h1 {
+    color: hotpink;
+}
+
+img {
+    width:200px;
+}
+
+div#wrapper {
+    display: grid;
+}
+
