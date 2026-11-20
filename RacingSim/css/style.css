@@ -1,7 +1,8 @@
 
 #Sigma {
     display: grid;
-    height: 200vh;
+    height: 150vh;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
         "header header header"
         "main main main"
@@ -11,16 +12,34 @@
         "footer footer footer";
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
 header {
     grid-area: header;
     background: rgba(210, 180, 140, 1);
-    padding: 75px;
+    padding: 20px;
 }
 
 main {
     grid-area: main;
     background: rgba(0, 191, 255, 1);
     padding: 250px;
+}
+
+.nav1, .nav2, .nav3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
 }
 
 .nav1 {
@@ -44,7 +63,7 @@ main {
 footer {
     grid-area: footer;
     background: rgba(210, 180, 140, 1);
-    padding: 75px;
+    padding: 50px;
 }
 
 #Sigma > * {
