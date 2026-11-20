@@ -3,12 +3,12 @@
     display: grid;
     height: 200vh;
     grid-template-areas:
-        "header"
-        "main"
-        "nav1"
-        "nav2"
-        "nav3"
-        "footer";
+        "header header header"
+        "main main main"
+        "nav1 nav1 nav1"
+        "nav2 nav2 nav2"
+        "nav3 nav3 nav3"
+        "footer footer footer";
 }
 
 header {
