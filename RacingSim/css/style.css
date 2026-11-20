@@ -1,12 +1,52 @@
-h1 {
-    color: hotpink;
-}
 
-img {
-    width:200px;
-}
-
-div#wrapper {
+#Sigma {
     display: grid;
+    height: 200vh;
+    grid-template-areas:
+        "header"
+        "main"
+        "nav1"
+        "nav2"
+        "nav3"
+        "footer";
 }
 
+header {
+    grid-area: header;
+    background: rgba(210, 180, 140, 1);
+    padding: 75px;
+}
+
+main {
+    grid-area: main;
+    background: rgba(0, 191, 255, 1);
+    padding: 250px;
+}
+
+.nav1 {
+    grid-area: nav1;
+    background: rgba(255, 0, 0, 1);
+    padding: 50px;
+}
+
+.nav2 {
+    grid-area: nav2;
+    background: rgba(255, 0, 0, 1);
+    padding: 50px;
+}
+
+.nav3 {
+    grid-area: nav3;
+    background: rgba(255, 0, 0, 1);
+    padding: 50px;
+} 
+
+footer {
+    grid-area: footer;
+    background: rgba(210, 180, 140, 1);
+    padding: 75px;
+}
+
+#Sigma > * {
+    border: 1px solid black;
+}
