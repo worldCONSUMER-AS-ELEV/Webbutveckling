@@ -1,7 +1,8 @@
 
 #Sigma {
     display: grid;
-    height: 150vh;
+    height: 175vh;
+
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
         "header header header"
@@ -25,7 +26,7 @@ body {
 header {
     grid-area: header;
     background: rgba(210, 180, 140, 1);
-    padding: 20px;
+    padding: 40px;
 }
 
 main {
@@ -36,28 +37,49 @@ main {
 
 .nav1, .nav2, .nav3 {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
     justify-items: center;
     align-items: center;
+    padding: 50px;
+    background-color: rgba(255, 0, 0, 1);
+}
+
+.nav-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+
+    width: 95%;
+    padding: 40px;
+    background: rgb(158, 34, 34);
+    border: 1px solid rgba(0, 0, 0, 1);
+    border-radius: 20px;
+}
+
+.nav-container div {
+    background: rgb(224, 128, 128);
+    border: 1px rgb(125, 74, 74);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+
 }
 
 .nav1 {
     grid-area: nav1;
     background: rgba(255, 0, 0, 1);
-    padding: 50px;
+    padding: 40px;
 }
 
 .nav2 {
     grid-area: nav2;
     background: rgba(255, 0, 0, 1);
-    padding: 50px;
+    padding: 40px;
 }
 
 .nav3 {
     grid-area: nav3;
     background: rgba(255, 0, 0, 1);
-    padding: 50px;
+    padding: 40px;
 } 
 
 footer {
